@@ -12785,44 +12785,54 @@ header nav .navbar-collapse ul li.active a::after {
   }
 }
 /* line 241, ../sass/styles.scss */
+.history a {
+  color: #fff;
+  cursor: pointer;
+}
+/* line 245, ../sass/styles.scss */
 .history h3 {
   margin: 0 0 10px 0;
   text-transform: uppercase;
   color: #fff;
 }
-/* line 249, ../sass/styles.scss */
+/* line 253, ../sass/styles.scss */
 .history table thead {
   color: #fff;
   text-transform: uppercase;
 }
-/* line 254, ../sass/styles.scss */
+/* line 258, ../sass/styles.scss */
 .history table tbody {
   color: #fff;
 }
-/* line 256, ../sass/styles.scss */
+/* line 260, ../sass/styles.scss */
 .history table tbody td {
   vertical-align: middle;
   border-color: #b74e91 !important;
 }
-/* line 260, ../sass/styles.scss */
+/* line 264, ../sass/styles.scss */
 .history table tbody img {
   width: 75px;
 }
-/* line 263, ../sass/styles.scss */
+/* line 267, ../sass/styles.scss */
 .history table tbody a {
   color: #fff;
   font-weight: bold;
   font-size: 20px;
 }
-/* line 271, ../sass/styles.scss */
+/* line 275, ../sass/styles.scss */
+.history .no-history a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+/* line 281, ../sass/styles.scss */
 .history .recommended {
   color: #fff;
 }
-/* line 274, ../sass/styles.scss */
+/* line 284, ../sass/styles.scss */
 .history .recommended ul {
   padding: 0 20px;
 }
-/* line 278, ../sass/styles.scss */
+/* line 288, ../sass/styles.scss */
 .history .recommended a {
   color: #fff;
   margin: 0;
@@ -12831,7 +12841,7 @@ header nav .navbar-collapse ul li.active a::after {
   position: relative;
   outline: none;
 }
-/* line 285, ../sass/styles.scss */
+/* line 295, ../sass/styles.scss */
 .history .recommended a::before {
   content: "";
   position: absolute;
@@ -12845,29 +12855,29 @@ header nav .navbar-collapse ul li.active a::after {
   transform: scaleX(0);
   transition: .25s linear;
 }
-/* line 299, ../sass/styles.scss */
+/* line 309, ../sass/styles.scss */
 .history .recommended a:hover::before, .history .recommended a:focus::before {
   visibility: visible;
   transform: scaleX(1);
 }
-/* line 306, ../sass/styles.scss */
+/* line 316, ../sass/styles.scss */
 .history .recommended li {
   margin: 10px 0;
 }
-/* line 309, ../sass/styles.scss */
+/* line 319, ../sass/styles.scss */
 .history .recommended a:hover {
   text-decoration: none;
 }
 
-/* line 317, ../sass/styles.scss */
+/* line 327, ../sass/styles.scss */
 .player h2 {
   margin-top: 0px;
 }
-/* line 320, ../sass/styles.scss */
+/* line 330, ../sass/styles.scss */
 .player .top-buffer {
   margin: 20px 0 0 0;
 }
-/* line 328, ../sass/styles.scss */
+/* line 338, ../sass/styles.scss */
 .player .categories ul li {
   background: #312450;
   padding: 10px;
@@ -12875,7 +12885,7 @@ header nav .navbar-collapse ul li.active a::after {
   float: left;
   margin: 0 10px;
 }
-/* line 336, ../sass/styles.scss */
+/* line 346, ../sass/styles.scss */
 .player .categories ul li:nth-child(1) {
   margin-left: 0px;
 }
