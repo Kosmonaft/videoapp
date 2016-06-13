@@ -11,16 +11,16 @@ app.use(cookieParser());
 var db_options = {
     host: 'localhost',
     //port: 3306,
-    user: 'pawel',
-    password: 'pawelch',
+    user: 'user',
+    password: 'password',
     database: 'accedo_db'
 };
 
 var optionsss = {
     host: 'localhost',
     //port: 3306,
-    user: 'pawel',
-    password: 'pawelch',
+    user: 'user',
+    password: 'password',
     database: 'accedo_db',
     schema: {
         tableName: 'sessions',
