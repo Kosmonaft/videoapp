@@ -4,7 +4,7 @@
             <h3>Recommended movies</h3>
             <ul>
                 <li ng-repeat="item in allMovies  | filter:userHistory[0].categories[0].id | limitTo:3 ">
-                    <a ui-sref="player({movieID: $index})">{{item.title}}</a>
+                    <a ui-sref="player({movieID: allMovies.indexOf(item)})">{{item.title}}</a>
                 </li>
             </ul>
         </div>
@@ -26,7 +26,10 @@
                 </tr>
                 </tbody>
             </table>
+            <div class="text-center no-history" ng-show="userHistory.length === 0">
+                <p>Haven't watched yet?</p>
+                <a ui-sref="home">Go to Home page and choose your video!</a>
+            </div>
         </div>
     </div>
-
 </div>
