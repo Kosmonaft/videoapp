@@ -238,6 +238,10 @@ header {
 
 .history {
 
+  a{
+    color:#fff;
+    cursor: pointer;
+  }
   h3 {
     margin: 0 0 10px 0;
     text-transform: uppercase;
@@ -265,6 +269,12 @@ header {
         font-weight: bold;
         font-size: 20px;
       }
+    }
+  }
+  .no-history{
+    a{
+      font-weight: bold;
+      text-decoration: underline;
     }
   }
 
