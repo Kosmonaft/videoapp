@@ -1,0 +1,169 @@
+/* line 1, ../sass/carousel.scss */
+.container.my-carousel {
+  overflow: visible;
+}
+/* line 4, ../sass/carousel.scss */
+.container.my-carousel .row {
+  position: relative;
+}
+/* line 8, ../sass/carousel.scss */
+.container.my-carousel .carousel-control {
+  cursor: pointer;
+  background: none;
+  position: absolute;
+  margin-top: -56px;
+  top: 50%;
+  width: 20px;
+  bottom: inherit;
+  left: inherit;
+  height: 56px;
+}
+/* line 19, ../sass/carousel.scss */
+.container.my-carousel .carousel-control.left {
+  margin-left: -40px;
+}
+/* line 22, ../sass/carousel.scss */
+.container.my-carousel .carousel-control.right {
+  margin-right: -40px;
+  left: auto;
+  right: 15px;
+}
+/* line 29, ../sass/carousel.scss */
+.container.my-carousel .carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+/* line 34, ../sass/carousel.scss */
+.container.my-carousel ul {
+  width: 390px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+/* line 40, ../sass/carousel.scss */
+.container.my-carousel ul li {
+  width: 183px;
+  display: inline;
+  margin: 5px 6px;
+  float: left;
+  cursor: pointer;
+}
+/* line 47, ../sass/carousel.scss */
+.container.my-carousel ul li .movie-btn {
+  position: relative;
+  overflow: hidden;
+}
+/* line 52, ../sass/carousel.scss */
+.container.my-carousel ul li div label {
+  position: absolute;
+  top: 0;
+  color: #fff;
+}
+/* line 58, ../sass/carousel.scss */
+.container.my-carousel ul li h2 {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.2s ease-in-out;
+  font-size: 14px;
+  color: #fff;
+  width: 100%;
+}
+/* line 69, ../sass/carousel.scss */
+.container.my-carousel ul li .mask {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 183px;
+  height: 271px;
+}
+/* line 81, ../sass/carousel.scss */
+.container.my-carousel ul li p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #fff;
+  padding: 10px 20px 20px;
+  text-align: center;
+}
+/* line 91, ../sass/carousel.scss */
+.container.my-carousel ul li.focus {
+  box-shadow: 0 0 5px #000;
+}
+/* line 95, ../sass/carousel.scss */
+.container.my-carousel ul li.focus img {
+  transform: scale(1.1);
+}
+/* line 99, ../sass/carousel.scss */
+.container.my-carousel ul li.focus .mask {
+  opacity: 1;
+}
+/* line 103, ../sass/carousel.scss */
+.container.my-carousel ul li.focus h2 {
+  opacity: 1;
+  transform: translateY(0px);
+}
+/* line 108, ../sass/carousel.scss */
+.container.my-carousel ul li img {
+  transition: all 0.2s linear;
+}
+/* line 112, ../sass/carousel.scss */
+.container.my-carousel ul li i {
+  color: #fff;
+  position: relative;
+  top: 35%;
+}
+/* line 122, ../sass/carousel.scss */
+.container.my-carousel img {
+  width: 183px;
+  position: relative;
+  display: block;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 131, ../sass/carousel.scss */
+  .container.my-carousel ul {
+    width: 585px;
+    display: block;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 140, ../sass/carousel.scss */
+  .container.my-carousel ul {
+    width: 975px;
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 149, ../sass/carousel.scss */
+  .container {
+    /*width: 1278px !important;*/
+  }
+
+  /* line 153, ../sass/carousel.scss */
+  .container.my-carousel {
+    overflow: visible;
+  }
+  /* line 156, ../sass/carousel.scss */
+  .container.my-carousel ul {
+    position: relative;
+    display: inline-flex;
+    width: auto;
+  }
+  /* line 160, ../sass/carousel.scss */
+  .container.my-carousel ul li {
+    width: 183px;
+    display: inline;
+    margin: 0 6px;
+  }
+  /* line 167, ../sass/carousel.scss */
+  .container.my-carousel img {
+    width: 183px;
+  }
+}

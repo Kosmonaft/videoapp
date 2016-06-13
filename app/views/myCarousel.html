@@ -1,0 +1,27 @@
+<div class="container my-carousel">
+    <div class="row">
+        <span class="carousel-control left visible-lg" ng-click="rotate('right')"><i class="fa fa-angle-left fa-4x"
+                                                                                    aria-hidden="true"></i></span>
+        <span class="carousel-control right visible-lg" ng-click="rotate('left')"><i class="fa fa-angle-right fa-4x"
+                                                                                      aria-hidden="true"></i></span>
+
+        <div class="carousel-container">
+            <ul>
+                <li ng-repeat="movie in movies" ng-class="{'focus': $index == focusIndex}"
+                    ng-mouseover="changeFocus($index)" ng-click="playMovie($index)">
+                    <div class="movie-btn">
+                        <img ng-src="{{movie.images[0].url}}" imageonload/>
+
+                        <div class="mask text-center">
+                            <i class="fa fa-play-circle fa-5x" aria-hidden="true"></i>
+
+                            <h2>{{movie.title}} </h2>
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>

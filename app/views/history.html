@@ -1,0 +1,32 @@
+<div class="container history">
+    <div class="row">
+        <div class="col-lg-4 hidden-md hidden-sm hidden-xs recommended">
+            <h3>Recommended movies</h3>
+            <ul>
+                <li ng-repeat="item in allMovies  | filter:userHistory[0].categories[0].id | limitTo:3 ">
+                    <a ui-sref="player({movieID: $index})">{{item.title}}</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+            <h3>Your History</h3>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Poster</th>
+                    <th>Title</th>
+                    <th>Watched</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="item in userHistory">
+                    <td><img ng-src="{{item.posterUrl}}" alt="item.title" imageonload/></td>
+                    <td><a ui-sref="player({movieID: {{item.idInMasterArray}}})">{{item.title}}</a></td>
+                    <td>{{item.created | date: 'dd-MM-yyyy HH:mm:ss'}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
